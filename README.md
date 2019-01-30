@@ -96,7 +96,7 @@ const play = () => {
 
 </details>
 
-## Step 2
+## Step 3
 
 ### Summary
 
