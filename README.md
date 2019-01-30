@@ -183,19 +183,6 @@ In this step, we will complete the logic that will determine if there is a winne
     - There are many different ways to accomplish this task. I encourage you to think through and write out each step that is needed as an outline.
 - If there is no winner, alert the screen that CAT has won the game!
 
-### Solution
-
-<details>
-<summary><code>/index.js</code> </summary>
-
-```js
-
-```
-
-</details>
-
-
-
 
 ## Black Diamond 
 
