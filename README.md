@@ -107,8 +107,7 @@ In this step, we will assign the player's value to the content of the square tha
 - Add a parameter to the function 'play'.
 - Using the passed in parameter and 'getElementById', grab the information of the element clicked. Set that equal to a variable.
 - Using that variable, assign the square that is clicked to have the value of the current player.
-
-- **Bonus Add an edge case that won't let you reassign a square that has already been clicked!
+- For extra practice, add an edge case that will not let you reassign a square that has already been clicked!
 
 ### Solution
 
@@ -182,6 +181,7 @@ In this step, we will complete the logic that will determine if there is a winne
 - In the play function inside `index.js`, iterate over the array that you created in the previous step. 
 - You will need to determine if there is a winner, and display the winning player to the screen using window.alert.
     - There are many different ways to accomplish this task. I encourage you to think through and write out each step that is needed as an outline.
+- If there is no winner, alert the screen that CAT has won the game!
 
 ### Solution
 
@@ -199,7 +199,8 @@ In this step, we will complete the logic that will determine if there is a winne
 
 ## Black Diamond 
 
-For extra practice, create a function that resets the board after each game. This function should be called after the winner is revealed. 
+1. Create a function that resets the board after each game. This function should be called after the winner is revealed.
+2. Add a button that resets the game when clicked. 
 
 
 ## Contributions
