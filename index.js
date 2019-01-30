@@ -1,12 +1,15 @@
 // let turn = 'X';
 
-const play = () => {
+const play = (val) => {
   const player = document.getElementById('player');
+  const element = document.getElementById(val);
 
   if (player.innerText === 'X') {
     player.innerText = 'O';
+    element.innerText = 'X'
   } else {
     player.innerText = 'X';
+    element.innerText = 'O'
   }
 };
 

@@ -96,6 +96,42 @@ const play = () => {
 
 </details>
 
+## Step 2
+
+### Summary
+
+In this step, we will assign the player's value to the content of the square that is clicked.
+
+### Instructions
+- Open 'index.js'
+- Add a parameter to the function 'play'.
+- Using the passed in parameter and 'getElementById', grab the information of the element clicked. Set that equal to a variable.
+- Using that variable, assign the square that is clicked to have the value of the current player.
+
+- **Bonus Add an edge case that won't let you reassign a square that has already been clicked!
+
+### Solution
+
+<details>
+
+<summary> <code> /index.js </code> </summary>
+
+```js
+const play = (val) => {
+  const player = document.getElementById('player');
+  const element = document.getElementById(val);
+
+  if (player.innerText === 'X') {
+    player.innerText = 'O';
+    element.innerText = 'X'
+  } else {
+    player.innerText = 'X';
+    element.innerText = 'O'
+  }
+};
+```
+
+</details>
 
 
 
