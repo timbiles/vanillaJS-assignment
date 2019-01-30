@@ -139,7 +139,7 @@ const play = (val) => {
 In this step, we will create an arr that will keep track of the game's progress.
 
 ### Instructions
-- Define an empty array to a variable at the top of `index.js`
+- Define an empty array to a variable at the top of `index.js`.
 - In the play function, add the current player's value ('X' or 'O') to the defined array at the index of the square that was clicked. 
     - ex. If the first square was clicked by player 'X', we would expect 'X' to be added to the arr at index 0.
 - Console.log the array in your function to keep track of it's current value.
@@ -171,6 +171,28 @@ const play = (val) => {
 
 </details>
 
+## Step 5
+
+### Summary
+
+In this step, we will complete the logic that will determine if there is a winner, and alert that winner to the window.
+
+### Instructions
+
+- In the play function inside `index.js`, iterate over the array that you created in the previous step. 
+- You will need to determine if there is a winner, and display the winning player to the screen using window.alert.
+    - There are many different ways to accomplish this task. I encourage you to think through and write out each step that is needed as an outline.
+
+### Solution
+
+<details>
+<summary><code>/index.js</code> </summary>
+
+```js
+
+```
+
+</details>
 
 
 
