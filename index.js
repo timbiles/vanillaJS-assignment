@@ -1,4 +1,4 @@
-// let turn = 'X';
+let board = []
 
 const play = (val) => {
   const player = document.getElementById('player');
@@ -7,10 +7,13 @@ const play = (val) => {
   if (player.innerText === 'X') {
     player.innerText = 'O';
     element.innerText = 'X'
+    board[val] = 'X'
   } else {
     player.innerText = 'X';
     element.innerText = 'O'
+    board[val] = 'O'
   }
+  console.log(board)
 };
 
 // let turn = 'X';

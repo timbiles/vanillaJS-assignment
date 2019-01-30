@@ -16,7 +16,7 @@ In this step, we will create a Javascript file and connect it to our HTML file.
 
 ### Instructions
 
-- Create a file called 'index.js'.
+- Create a file called `index.js`.
 - Connect that script file to the HTML page.
   - Feel free to console.log a message to test the connect from your script file.
 
@@ -103,7 +103,7 @@ const play = () => {
 In this step, we will assign the player's value to the content of the square that is clicked.
 
 ### Instructions
-- Open 'index.js'
+- Open `index.js`
 - Add a parameter to the function 'play'.
 - Using the passed in parameter and 'getElementById', grab the information of the element clicked. Set that equal to a variable.
 - Using that variable, assign the square that is clicked to have the value of the current player.
@@ -133,12 +133,51 @@ const play = (val) => {
 
 </details>
 
+## Step 4
+
+### Summary
+In this step, we will create an arr that will keep track of the game's progress.
+
+### Instructions
+- Define an empty array to a variable at the top of `index.js`
+- In the play function, add the current player's value ('X' or 'O') to the defined array at the index of the square that was clicked. 
+    - ex. If the first square was clicked by player 'X', we would expect 'X' to be added to the arr at index 0.
+- Console.log the array in your function to keep track of it's current value.
+
+### Solution
+
+<details>
+<summary><code>/index.js</code> </summary>
+
+```js
+let board = []
+
+const play = (val) => {
+  const player = document.getElementById('player');
+  const element = document.getElementById(val);
+
+  if (player.innerText === 'X') {
+    player.innerText = 'O';
+    element.innerText = 'X'
+    board[val] = 'X'
+  } else {
+    player.innerText = 'X';
+    element.innerText = 'O'
+    board[val] = 'O'
+  }
+  console.log(board)
+};
+```
+
+</details>
 
 
 
 
 
 ## Black Diamond 
+
+For extra practice, create a function that resets the board after each game. This function should be called after the winner is revealed. 
 
 
 ## Contributions
