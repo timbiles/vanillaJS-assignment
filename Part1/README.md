@@ -1,5 +1,7 @@
 <img src="https://s3.amazonaws.com/devmountain/readme-logo.png" width="250" align="right">
 
+# Tic Tac Toe Board
+
 # Project Summary
 
 In this project, we will be creating practicing manipulating the DOM using vanilla Javascript and an html file.
