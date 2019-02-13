@@ -124,8 +124,41 @@ const setCard = () => {
 </details>
 
 
+## Step 2
+
+### Summary
+
+In this step, we will create a poker hand of 4 of a kind.
+
+### Instructions
+
+- Open `index.js`.
+- Target the card that is being selected in the function `getCard`. Using the information gathered from the second input field, add the `color` style to the targeted card element.
+- Edit the cards to create a hand that has 4 of a kind. (All 4 cards of the same rank).
+
+
+### Solution
+
+<details>
+
+<summary> <code> /index.js </code> </summary>
+
+```js
+const id = document.getElementById('idInput')
+const color = document.getElementById('colorInput')
+
+const setCard = () => {
+    const card = document.getElementById(id.value)
+    console.log(card)
+    card.style.color = color.value;
+}
+```
+
+</details>
+
 
 ## Black Diamond 
+- Create a button that resets the attributes of each card. 
 
 
 
