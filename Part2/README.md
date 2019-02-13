@@ -4,11 +4,7 @@
 
 # Project Summary
 
-In this project, we will practice manipulating the DOM using vanilla Javascript and an html file.
-
-## Setup
-
-Fork and clone this repository and open the folder in your code editor. You can use live-server to see real-time changes from your code in the browser.
+The goal of this project is to create a a, we will practice manipulating the DOM using vanilla Javascript and an html file.
 
 ## Step 1
 
@@ -19,13 +15,37 @@ In this step, we will connect a javascript file to our HTML.
 ### Instructions
 
 - Create a file in the root of the folder called `index.js`.
-- Add a script tag at the bottom of `index.html` and connect the javascript file to our HTML file. You can test this connection by adding a console log if you would like.
+- Open `index.html`.
+- Add a script tag at the bottom of HTML file and connect the javascript file that was just created. 
+    - Test this connection by adding a console log that says `The house always wins!`
 
 
 ### Solution
 
 <details>
 <summary> <code> /index.html </code> </summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styles</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+<body>
+  <header><h1>Poker Cards</h1></header>
+    <main>
+        <section><span>A</span><span>♦</span><span>A</span></section>
+        <section><span>A</span><span>♣</span><span>A</span></section>
+        <section><span>A</span><span>♥</span><span>A</span></section>
+        <section><span>A</span><span>♠</span><span>A</span></section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
+```
 </details>
 
 ## Step 2
@@ -36,12 +56,37 @@ In this step, we will create input fields that can be used to pass information t
 
 ### Instructions
 
-- In `index.html`, create 2 input fields under the main tag. The first input will be used to grab the id of each card, the second will be used to assign a style attribute to the card.
-- Assign a specific id to both inputs.
-- In `index.js`, using getElementById, grab the information of each input field. Assign a variable to each of those, and console.log the results.
+- Open `index.html`.
+- Create 2 input fields under the main tag. The first input will be used to grab the id of each card, the second will be used to assign a style attribute to the card.
+- Assign a specific id to each input.
+- Open `index.js`
+- Using getElementById, grab the information of each input field. Assign a variable to each of those, and console.log the results.
 
 
 ### Solution
+
+<details>
+
+<summary> <code> /index.html </code> </summary>
+
+```html
+...html
+<body>
+  <header>Poker Cards</header>
+    <main>
+        <section><span>A</span><span>A</span></section>
+        <section><span>A</span><span>A</span></section>
+        <section><span>A</span><span>A</span></section>
+        <section><span>A</span><span>A</span></section>
+    </main>
+    <input id='idInput' type="text" placeholder='Set ID'>
+    <input id='colorInput' type="text" placeholder='Set Color'>
+    <script src='./index.js'></script>
+</body>
+</html>
+```
+
+</details>
 
 <details>
 
@@ -65,12 +110,14 @@ In this step, we will target each card using the input fields that we created.
 
 ### Instructions
 
-- In `index.html`, assign a specific id to each section tag. These are our 4 cards. Have each id be a different playing card suit (diamonds, clubs, hearts, and spades).
-- Create a button under the input fields. 
-- Assign two attribute to the button: 
+- Open `index.html`.
+- Assign a specific id to each section tag. These are the 4 cards in our hand. Have each id match the corresponding playing card suit (diamonds, clubs, hearts, and spades).
+- Create a button beneath the input fields. 
+- Assign two attributes to the button: 
     - A specific id.
-    - an onclick event called `setCard`.
-- In `index.js`, using getElementById and the onclick event, create a function that captures the card element based off of the value (id) that is passed into first input field.
+    - An onclick event called `setCard`.
+- Open `index.js`
+- Using getElementById and the onclick event, create a function that captures the card element based off of the value (id) that is passed into first input field.
 - Console.log the result, and check the developer console.
 
 
@@ -82,13 +129,7 @@ In this step, we will target each card using the input fields that we created.
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Styles</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
+... html
 <body>
   <header>Poker Cards</header>
     <main>
@@ -124,7 +165,7 @@ const setCard = () => {
 </details>
 
 
-## Step 2
+## Step 4
 
 ### Summary
 
@@ -133,8 +174,10 @@ In this step, we will create a poker hand of 4 of a kind.
 ### Instructions
 
 - Open `index.js`.
-- Target the card that is being selected in the function `getCard`. Using the information gathered from the second input field, add the `color` style to the targeted card element.
-- Edit the cards to create a hand that has 4 of a kind. (All 4 cards of the same rank).
+- Target the card that is being selected in the function `getCard`.
+- Using the information gathered from the second input field, add the `color` style to the targeted card element.
+    - Assign the appropriate color to each card (Diamonds/Hearts = red, Clubs/Spades = black).
+- Edit the cards until there is a hand that has 4 of a kind. (All 4 cards of the same rank).
 
 
 ### Solution
@@ -159,8 +202,6 @@ const setCard = () => {
 
 ## Black Diamond 
 - Create a button that resets the attributes of each card. 
-
-
 
 
 ## Contributions

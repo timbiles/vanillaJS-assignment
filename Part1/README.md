@@ -6,10 +6,6 @@
 
 In this project, we will continue to work using vanilla Javascript to manipulate the DOM.
 
-## Setup
-
-Fork and clone this repository and open the folder in your code editor. You can use live-server to see real-time changes from your code in the browser.
-
 ## Step 1
 
 ### Summary
