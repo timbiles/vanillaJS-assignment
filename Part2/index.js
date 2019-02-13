@@ -1,13 +1,14 @@
+const id = document.getElementById('idInput')
+const color = document.getElementById('colorInput')
 
 const setCard = () => {
-    const id = document.getElementById('idInput').value
-    const color = document.getElementById('colorInput').value
+    const card = document.getElementById(id.value)
+    console.log(card)
 
-    console.log(id, color)
-    const card = document.getElementById(id)
-
-    card.style.color = color
+    // card.style.color = color.value;
+    // card.style.border = `1px solid ${color.value}`
 }
 
 const reset = () => {
+
 }

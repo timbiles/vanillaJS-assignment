@@ -4,7 +4,7 @@
 
 # Project Summary
 
-In this project, we will be creating practicing manipulating the DOM using vanilla Javascript and an html file.
+In this project, we will continue to work using vanilla Javascript to manipulate the DOM.
 
 ## Setup
 
